@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <title>Home</title>
 </head>
 <body>
-$END$
+<h1>Welcome to the GymApp Home Page!</h1>
+<p>You are logged in as <strong th:text="${username}">Username</strong></p>
+<p><a href="/logout">Logout</a></p>
 </body>
 </html>
+
+
