@@ -5,10 +5,15 @@
     <link rel="stylesheet" th:href="@{/css/styles.css}" />
 </head>
 <body>
-<h1>Welcome to the GymApp!</h1>
-<p>You are logged in as <strong th:text="${username}">[username]</strong></p>
-<p><a th:href="@{/logout}">Logout</a></p>
+<div class="container">
+    <h2>Welcome!</h2>
+    <p class="message">You're logged in as <strong th:text="${username}">User</strong>.</p>
+    <form th:action="@{/logout}" method="post">
+        <button type="submit">Logout</button>
+    </form>
+</div>
 </body>
 </html>
+
 
 
