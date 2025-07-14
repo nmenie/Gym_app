@@ -11,10 +11,10 @@ public class HomeController {
 
     @GetMapping("/home")
     public String home(@AuthenticationPrincipal User user, ModelMap model) {
-        // Add the logged-in username to the ModelMap
         if (user != null) {
-            model.addAttribute("username", user.getUsername());
+            model.put("username", user.getUsername());
         }
-        return "home";  // Return the home.html page
+        return "home";  // This looks for home.html
     }
 }
+

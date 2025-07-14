@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class LoginController {
 
-    @GetMapping("/")
-    public String loginPage(HttpServletRequest request) {
-        return "Hello There!" + request.getSession().getId();  // Return the login.html page
+    @GetMapping("/login")
+    public String login() {
+        return "login";
     }
 }
 

@@ -2,11 +2,12 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Home</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
 </head>
 <body>
-<h1>Welcome to the GymApp Home Page!</h1>
-<p>You are logged in as <strong th:text="${username}">Username</strong></p>
-<p><a href="/logout">Logout</a></p>
+<h1>Welcome to the GymApp!</h1>
+<p>You are logged in as <strong th:text="${username}">[username]</strong></p>
+<p><a th:href="@{/logout}">Logout</a></p>
 </body>
 </html>
 
