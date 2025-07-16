@@ -1,16 +1,19 @@
+/* Base layout and background */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(120deg, #f0f4f8, #d9e4ec);
     margin: 0;
     padding: 0;
     height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("/images/login-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Container box */
 .container {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 2rem 2.5rem;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -18,12 +21,14 @@ body {
     max-width: 400px;
 }
 
+/* Headers */
 h1, h2 {
-    text-align: center;
-    color: #333;
     margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
 }
 
+/* Form inputs */
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -35,37 +40,11 @@ input[type="password"] {
     font-size: 1rem;
 }
 
+/* Submit button */
 button {
     width: 100%;
     padding: 0.75rem;
-    background-color: #4CAF50;
-    color: white;
     font-weight: bold;
+    background-color: #4CAF50;
+    color: #fff;
     border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-a {
-    display: block;
-    text-align: center;
-    margin-top: 1rem;
-    color: #007BFF;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-p.message {
-    text-align: center;
-    color: #555;
-    margin-top: 1rem;
-}
-
