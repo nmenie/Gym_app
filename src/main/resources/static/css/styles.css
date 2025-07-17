@@ -1,50 +1,79 @@
-/* Base layout and background */
+/* Full-page background */
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url("/images/login-bg.jpg") no-repeat center center fixed;
+    background: url("/images/login-bg8.jpg") no-repeat center center fixed;
     background-size: cover;
+    color: #333;
+
+/* Header */
+header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
 }
 
-/* Container box */
-.container {
-    background-color: #fff;
-    padding: 2rem 2.5rem;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-}
-
-/* Headers */
-h1, h2 {
-    margin-bottom: 1.5rem;
-    color: #333;
-    text-align: center;
-}
-
-/* Form inputs */
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-}
-
-/* Submit button */
-button {
-    width: 100%;
-    padding: 0.75rem;
+.site-title {
+    font-size: 2.5rem;
     font-weight: bold;
-    background-color: #4CAF50;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Login button */
+.login-btn {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    text-decoration: none;
     color: #fff;
-    border: none;
+    background-color: #4CAF50;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+/* Search bar */
+.search-bar {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Sidebar dropdown */
+.sidebar {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+.sidebar select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+/* Main content */
+.content {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+
+

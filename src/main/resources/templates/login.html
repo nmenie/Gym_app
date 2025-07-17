@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Login</title>
+    <title>Grounded Health</title>
     <link rel="stylesheet" th:href="@{/css/styles.css}" />
 </head>
 <body>
-<div class="container">
-    <h2>Login</h2>
-    <form th:action="@{/login}" method="post">
-        <div>
-            <input type="email" name="username" placeholder="Email" required />
-        </div>
-        <div>
-            <input type="password" name="password" placeholder="Password" required />
-        </div>
-        <button type="submit">Login</button>
-    </form>
-    <a th:href="@{/register}">Don't have an account? Register</a>
+<div class="background-overlay">
+    <header>
+        <div class="site-title">Grounded Health</div>
+        <a th:href="@{/login}" class="login-btn">Login</a>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search health, fitness, nutrition..." />
+    </div>
+
+    <aside class="sidebar">
+        <select>
+            <option>Categories</option>
+            <option>Fitness</option>
+            <option>Nutrition</option>
+            <option>Mental Health</option>
+            <option>Lifestyle</option>
+        </select>
+    </aside>
+
+    <main class="content">
+        <p>Welcome to Grounded Health — your space for health, fitness, and well-being info. More content coming soon!</p>
+    </main>
 </div>
 </body>
 </html>
+
+
 
 
 
